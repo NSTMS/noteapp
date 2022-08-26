@@ -70,10 +70,7 @@ function showMore(number) {
       }catch{
         console.log(`cicho`)
       }
-    }else
-    {
-      alert("Nie usuwaj tytułu i treści notatki lol")
-    }
+    }else  console.log("zostaw")
   });
 
   document.getElementById("article-content").addEventListener("change", ()=>{
@@ -87,7 +84,7 @@ function showMore(number) {
       }catch{
         console.log(`cicho`)
       }
-    }else alert("Nie usuwaj tytułu i treści notatki lol")
+    }else console.log("zostaw")
 
   })
 

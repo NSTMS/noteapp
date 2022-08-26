@@ -62,7 +62,7 @@ function showMore(number) {
     let content = document.getElementById("article-content").value;
   
     console.log(`hej ${current_number}`)
-    if(title !== undefined && content !== undefined && title !== null && content !== null)
+    if(title !== undefined && content !== undefined && title !== null && content !== null && title !== "" && content !=="")
     {
       all_notes_titles[current_number] = document.getElementById("article-title").value;
       try{
@@ -72,14 +72,14 @@ function showMore(number) {
       }
     }else
     {
-      console.log(`nie i już`)
+      alert("Nie usuwaj tytułu i treści notatki lol")
     }
   });
 
   document.getElementById("article-content").addEventListener("change", ()=>{
     let title = document.getElementById("article-title").value;
     let content = document.getElementById("article-content").value;
-    if(title !== undefined && title !== null && content !== undefined && content !== null )
+    if(title !== undefined && title !== null && content !== undefined && content !== null && title !== "" && content !=="" )
     {
       all_notes_content[current_number] = document.getElementById("article-content").value;
       try{
@@ -87,7 +87,7 @@ function showMore(number) {
       }catch{
         console.log(`cicho`)
       }
-    }else console.log(`nie i już`)
+    }else alert("Nie usuwaj tytułu i treści notatki lol")
 
   })
 

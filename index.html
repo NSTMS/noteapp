@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>good notes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadNotes()">
+    <nav>
+        <h1>good notes</h1>
+    </nav>
+    <div id="main-content">
+
+        <main id="main">
+            <h2 id="notes">notes</h2>
+            <div id="all_notes">
+                <div class="note new-note" onclick="blankNote()"><h2>blank note</h2></div>
+            </div>
+        </main>
+        <article>
+            <textarea id="article-title"></textarea>
+            <textarea id="article-content"></textarea>
+        </article>
+    </div>
+    <div class="buttons">
+        <button type="submit" id="wipeNotes" onclick="wipeData()">-</button>
+        <button type="submit" id="addNote" onclick="addNote()">+</button>
+    </div>
+
+
+    <footer><p>Credits @NSTMS</p></footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
